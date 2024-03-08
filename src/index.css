@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .input_error {
+    border: 2px solid red;
+    box-shadow: 0 0 0 rgb(255, 255, 255);
+    box-shadow: none !important;
+  }
+  th,
+  td {
+    text-align: left;
+    border: 1px solid black;
+    padding: 5px;
+  }
+}
