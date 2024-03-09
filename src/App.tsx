@@ -1,25 +1,26 @@
 import React from "react";
-import { useMemo } from "react";
-import { useAppSelector } from "src/redux/store";
-import AirportCard from "src/components/AirportCard/index";
-import SearchPanel from "src/components/SearchPanel";
+import { createHashRouter, RouterProvider } from "react-router-dom";
+import { Provider } from "react-redux";
+import SearchAirportPage from "src/Pages/SearchAirportPage";
+import AvailableAirportRoutes from "src/Pages/AirportRoutesPage";
+import { store } from "src/redux/store";
+
+const router = createHashRouter([
+  {
+    path: "/",
+    element: <SearchAirportPage />
+  },
+  {
+    path: "/routes/:icao",
+    element: <AvailableAirportRoutes />
+  }
+]);
 
 function App() {
-  const { airports, loading } = useAppSelector((state) => state.airports);
-
-  const renderedAirports = useMemo(() => {
-    return airports.map((airport, key) => {
-      return <AirportCard {...airport} key={key} />;
-    });
-  }, [airports]);
-  const isAirports = airports.length > 0;
   return (
-    <div>
-      <SearchPanel />
-      <div className="flex pl-4">
-        {isAirports ? renderedAirports : "Nothing found"}
-      </div>
-    </div>
+    <Provider store={store}>
+      <RouterProvider router={router} />
+    </Provider>
   );
 }
 

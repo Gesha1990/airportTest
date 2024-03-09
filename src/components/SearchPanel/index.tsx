@@ -1,5 +1,5 @@
 import React from "react";
-import { useRef, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import classNames from "classnames";
 import { SearchSvg } from "src/assets/index";
 import { useAppDispatch } from "src/redux/store";

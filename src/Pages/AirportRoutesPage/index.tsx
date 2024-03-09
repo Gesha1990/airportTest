@@ -13,7 +13,7 @@ function AirportRoutesPage() {
 
   useEffect(() => {
     dispatch(fetchRoutesByIcao(icao as string));
-  }, []);
+  }, [dispatch, icao]);
 
   const renderedRoutes = useMemo(() => {
     return routes.map((route, key) => {
