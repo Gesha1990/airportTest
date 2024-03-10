@@ -27,7 +27,7 @@ function SearchPanel() {
   };
 
   useEffect(() => {
-    if (!isError) {
+    if (!isError && inputValue) {
       dispatch(fetchAirportsByName(inputValue));
     }
   }, []);
