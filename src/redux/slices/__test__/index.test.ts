@@ -5,6 +5,14 @@ import { fetchAirportsByName } from "../airportsSlice";
 import routesReducer from "../routesSlice";
 import { fetchRoutesByIcao } from "../routesSlice";
 
+jest.mock("src/redux/api/config", () => {
+  return {
+    get: () => {
+      return { data: "value" };
+    }
+  };
+});
+
 describe("Checking  reducers work", () => {
   afterEach(() => {
     jest.restoreAllMocks();
