@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/airportTest/static/css/main.09f3a60c.css",
-    "main.js": "/airportTest/static/js/main.d212cf22.js",
+    "main.js": "/airportTest/static/js/main.6ffa481e.js",
     "static/js/453.a6a97343.chunk.js": "/airportTest/static/js/453.a6a97343.chunk.js",
     "index.html": "/airportTest/index.html",
     "static/media/search-svg.svg": "/airportTest/static/media/search-svg.cc4ba8fe04a976d10b86799676a71883.svg",
     "static/media/icon-left-arro.svg": "/airportTest/static/media/icon-left-arro.7aec09dee0f3e3580e2df7274b731028.svg",
     "main.09f3a60c.css.map": "/airportTest/static/css/main.09f3a60c.css.map",
-    "main.d212cf22.js.map": "/airportTest/static/js/main.d212cf22.js.map",
+    "main.6ffa481e.js.map": "/airportTest/static/js/main.6ffa481e.js.map",
     "453.a6a97343.chunk.js.map": "/airportTest/static/js/453.a6a97343.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.09f3a60c.css",
-    "static/js/main.d212cf22.js"
+    "static/js/main.6ffa481e.js"
   ]
 }
