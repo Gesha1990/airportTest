@@ -11,5 +11,5 @@ test("Search airport page rendering", async () => {
     </Provider>
   );
 
-  expect(screen.getByText("Loading...")).toBeInTheDocument();
+  expect(screen.getByText("Nothing found")).toBeInTheDocument();
 });
